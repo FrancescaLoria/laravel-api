@@ -1,8 +1,17 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-3">
+        @if (session('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+            
+        @endif
         <h1 class="text-center my-3">LA LISTA DEI PROJECTS</h1>
+        <div class="text-end">
+            <a class="btn btn-primary" href="{{route('admin.projects.create')}}">NUOVO PROJECT</a>
+        </div>
 
     <table class="table">
         <thead>
