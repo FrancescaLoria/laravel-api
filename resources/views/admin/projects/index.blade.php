@@ -1,7 +1,8 @@
 @extends('layouts.admin')
 
 @section('content')
-<h1>La lista dei projects</h1>
+    <div class="container">
+        <h1 class="text-center my-3">LA LISTA DEI PROJECTS</h1>
 
     <table class="table">
         <thead>
@@ -29,4 +30,5 @@
         </tbody>
     </table>
     
+    </div>
 @endsection
