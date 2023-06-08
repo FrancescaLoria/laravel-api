@@ -13,6 +13,15 @@
         </div>
         
         <p class="mt-3">{{$project->content}}</p>
+        <div>
+            <h4>Technologies: </h4>
+            @forelse ($project->technologies as $technology)
+                <span>{{ $technology->name }} {{ $loop->last ? '' : ','}}</span>
+            @empty
+                <span>Nessun tecnologia presente</span>
+            @endforelse
+        </div>
     </div>
+   
     
 @endsection
