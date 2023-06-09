@@ -41,7 +41,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="content" class="form-label">CONTENUTO</label>
+            <label for="content" class="form-label mt-3">CONTENUTO</label>
             <textarea class="form-control" id="content" name="content" rows="3">{{ old('content')}}</textarea>
         </div>
         <button class="btn btn-primary" type="submit">INVIA</button>

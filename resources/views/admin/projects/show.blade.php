@@ -21,6 +21,7 @@
                 <span>Nessun tecnologia presente</span>
             @endforelse
         </div>
+        <a class="btn btn-warning my-3" href="{{ url()->previous() }}">Back</a>
     </div>
    
     
