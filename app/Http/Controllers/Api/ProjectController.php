@@ -27,7 +27,7 @@ class ProjectController extends Controller
             return response()->json([
                 'success' => false,
                 'error' => 'Nessun post trovato'
-            ]);
+            ])->setStatusCode(404);
         }
     }
 }
